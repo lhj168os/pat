@@ -19,7 +19,8 @@ int main(int argc, char *argv[])
 bool isPrime(int num)
 {
 	int tmp = sqrt(num);
-	if(num == 1 || num == 2 || num == 3) return true;
+	if(num == 1) return false;
+	if(num == 2 || num == 3) return true;
 	if(num%6 != 1 && num%6 != 5) return false;
 	for(int i = 5; i <= tmp; i+=6)
 	{
